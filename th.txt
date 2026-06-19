@@ -1,0 +1,48 @@
+REACT JS
+
+
+backend : server side fw : nodejs,spring,django
+frontend: html,css,js --> client side ---> react  js, angular ,
+
+fw: fw is pre define arch: built on existing tech 
+    to reduce common logics:
+
+react js --> js frontend framework .
+
+19th version
+
+system : 
+node js:
+
+NPM: node package manager:
+
+node --> built in pakages: --manage ->npm
+
+JDK -->JRE/JVM ---> .jar  --> packages ---> classes -->methods
+node --->npm  ---->node_module --> build /dist --> pckages --> .js -->functional
+
+
+
+
+d:c: --> projects[f] --> mern[f] --> ctrl+l -->type cmd
+npm create vite
+
+projectname: learning26
+           : react
+           : javascript
+	
+	   press no
+	
+	   cd learning26
+	   npm install
+	   code . 
+
+
+open new terminal
+type cmd and enter
+npm run dev
+
+
+npm run dev:
+package.json
+
