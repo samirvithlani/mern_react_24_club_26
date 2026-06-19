@@ -46,3 +46,25 @@ npm run dev
 npm run dev:
 package.json
 
+
+component based arch:
+
+we can create 2 type of component:
+1)class based component:
+2)functional component: 16.8 version
+
+
+react component naming rules:
+cap start:
+
+ext:
+es7+
+shortcuts
+
+src:
+ components:
+
+Header.jsx -->rafc  --->App.jsx
+Footer.jsx --->rafc  -->App.jsx
+Content.jsx -->rafc --> app.js --->data --> variable.. -->App.jsx
+
