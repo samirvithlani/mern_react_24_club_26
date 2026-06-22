@@ -68,3 +68,8 @@ Header.jsx -->rafc  --->App.jsx
 Footer.jsx --->rafc  -->App.jsx
 Content.jsx -->rafc --> app.js --->data --> variable.. -->App.jsx
 
+
+Array : -->loop -->foreach,map
+forEach --> void
+map -->[]
+
