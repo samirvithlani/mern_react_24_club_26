@@ -73,3 +73,31 @@ Array : -->loop -->foreach,map
 forEach --> void
 map -->[]
 
+
+HTML: <a href ="page.url">
+routing:
+
+3rd party package:
+npm i react-router-dom
+
+<BrowserRouter>: react application routing enable: main.jsx
+<Routes>       : it will hold all route :app.jsx
+<Route>        : it will create url for component : app.jsx
+
+
+
+SINGLE PAGE APP:
+replace <a> :<Link>
+href  with to
+
+
+install npm i react-router-dom
+
+create folder src:hotstar
+2 co
+Movies
+Shows
+
+component:
+Navbar.jsx:
+
