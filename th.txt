@@ -101,3 +101,20 @@ Shows
 component:
 Navbar.jsx:
 
+
+impl:
+
+/ hompage
+/* error page 
+APp.jsx
+
+<------------>
+Watch component :
+Movies -->3 movie list
+<Link> to Watch
+app.js check with wild card char :name
+
+Watch component get data from url using useParams()
+
+
+
