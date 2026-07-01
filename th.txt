@@ -117,4 +117,11 @@ app.js check with wild card char :name
 Watch component get data from url using useParams()
 
 
+ipl[f] 
 
+Team -->app.js route
+navbar -->li team
+ Teams :-> map -->table -->detail
+TeamDetail component -->
+ app.js -->teamdetail routes ->add -->
+ teamdetail to fetch id useParams() 

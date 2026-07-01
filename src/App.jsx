@@ -15,6 +15,8 @@ import { Navbar } from './components/Navbar'
 import { HomePage } from './components/hotstar/HomePage'
 import { Error404 } from './components/Error404'
 import { Watch } from './components/hotstar/Watch'
+import { Teams } from './components/ipl/Teams'
+import { TeamDetail } from './components/ipl/TeamDetail'
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
             <Route path='/' element = {<HomePage/>}></Route>
             <Route path='/*' element ={<Error404/>}></Route>
             <Route path='/watch/:name' element = {<Watch/>}></Route>
+            <Route path='/teams' element = {<Teams/>}></Route>
+            <Route path='/teamdetail/:id' element ={<TeamDetail/>}></Route>
           </Routes>
     </div>
   )
