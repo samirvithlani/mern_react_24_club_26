@@ -1,11 +1,207 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React from "react";
+import { useParams } from "react-router-dom";
 
 export const TeamDetail = () => {
-    const teamId = useParams().id;
+  const teamId = useParams().id;
+
+  const teamList = [
+    {
+      id: 1,
+      name: "Chennai Super Kings",
+      shortName: "CSK",
+      poster: "https://www.iplt20.com/assets/images/teams/CSK.png",
+      captain: "Ruturaj Gaikwad",
+      coach: "Stephen Fleming",
+      trophyWins: 5,
+      winningYears: [2010, 2011, 2018, 2021, 2023],
+      homeGround: "M. A. Chidambaram Stadium, Chennai",
+      city: "Chennai",
+      state: "Tamil Nadu",
+      founded: 2008,
+      primaryColor: "#F9CD05",
+      secondaryColor: "#0081E9",
+      mascot: "Lion",
+      owner: "India Cements",
+    },
+    {
+      id: 2,
+      name: "Mumbai Indians",
+      shortName: "MI",
+      poster: "https://www.iplt20.com/assets/images/teams/MI.png",
+      captain: "Hardik Pandya",
+      coach: "Mahela Jayawardene",
+      trophyWins: 5,
+      winningYears: [2013, 2015, 2017, 2019, 2020],
+      homeGround: "Wankhede Stadium, Mumbai",
+      city: "Mumbai",
+      state: "Maharashtra",
+      founded: 2008,
+      primaryColor: "#004BA0",
+      secondaryColor: "#D1AB3E",
+      mascot: "Paltan",
+      owner: "Reliance Industries",
+    },
+    {
+      id: 3,
+      name: "Royal Challengers Bengaluru",
+      shortName: "RCB",
+      poster: "https://www.iplt20.com/assets/images/teams/RCB.png",
+      captain: "Rajat Patidar",
+      coach: "Andy Flower",
+      trophyWins: 1,
+      winningYears: [2025],
+      homeGround: "M. Chinnaswamy Stadium, Bengaluru",
+      city: "Bengaluru",
+      state: "Karnataka",
+      founded: 2008,
+      primaryColor: "#EC1C24",
+      secondaryColor: "#000000",
+      mascot: "Bold Army",
+      owner: "United Spirits",
+    },
+    {
+      id: 4,
+      name: "Kolkata Knight Riders",
+      shortName: "KKR",
+      poster: "https://www.iplt20.com/assets/images/teams/KKR.png",
+      captain: "Ajinkya Rahane",
+      coach: "Abhishek Nayar",
+      trophyWins: 3,
+      winningYears: [2012, 2014, 2024],
+      homeGround: "Eden Gardens, Kolkata",
+      city: "Kolkata",
+      state: "West Bengal",
+      founded: 2008,
+      primaryColor: "#3A225D",
+      secondaryColor: "#D4AF37",
+      mascot: "Knight",
+      owner: "Knight Riders Group",
+    },
+    {
+      id: 5,
+      name: "Sunrisers Hyderabad",
+      shortName: "SRH",
+      poster: "https://www.iplt20.com/assets/images/teams/SRH.png",
+      captain: "Pat Cummins",
+      coach: "Daniel Vettori",
+      trophyWins: 1,
+      winningYears: [2016],
+      homeGround: "Rajiv Gandhi International Stadium, Hyderabad",
+      city: "Hyderabad",
+      state: "Telangana",
+      founded: 2013,
+      primaryColor: "#FF822A",
+      secondaryColor: "#000000",
+      mascot: "Eagle",
+      owner: "Sun TV Network",
+    },
+    {
+      id: 6,
+      name: "Delhi Capitals",
+      shortName: "DC",
+      poster: "https://www.iplt20.com/assets/images/teams/DC.png",
+      captain: "Axar Patel",
+      coach: "Hemang Badani",
+      trophyWins: 0,
+      winningYears: [],
+      homeGround: "Arun Jaitley Stadium, Delhi",
+      city: "Delhi",
+      state: "Delhi",
+      founded: 2008,
+      primaryColor: "#004C93",
+      secondaryColor: "#EF1B23",
+      mascot: "Tiger",
+      owner: "JSW Group & GMR Group",
+    },
+    {
+      id: 7,
+      name: "Punjab Kings",
+      shortName: "PBKS",
+      poster: "https://www.iplt20.com/assets/images/teams/PBKS.png",
+      captain: "Shreyas Iyer",
+      coach: "Ricky Ponting",
+      trophyWins: 0,
+      winningYears: [],
+      homeGround: "Maharaja Yadavindra Singh Stadium, Mullanpur",
+      city: "Mohali",
+      state: "Punjab",
+      founded: 2008,
+      primaryColor: "#D71920",
+      secondaryColor: "#C0C0C0",
+      mascot: "Lion",
+      owner: "KPH Dream Cricket Pvt Ltd",
+    },
+    {
+      id: 8,
+      name: "Rajasthan Royals",
+      shortName: "RR",
+      poster: "https://www.iplt20.com/assets/images/teams/RR.png",
+      captain: "Riyan Parag",
+      coach: "Kumar Sangakkara",
+      trophyWins: 1,
+      winningYears: [2008],
+      homeGround: "Sawai Mansingh Stadium, Jaipur",
+      city: "Jaipur",
+      state: "Rajasthan",
+      founded: 2008,
+      primaryColor: "#FF1493",
+      secondaryColor: "#1E90FF",
+      mascot: "Royal Lion",
+      owner: "Royal Multisport Pvt Ltd",
+    },
+    {
+      id: 9,
+      name: "Lucknow Super Giants",
+      shortName: "LSG",
+      poster: "https://www.iplt20.com/assets/images/teams/LSG.png",
+      captain: "Rishabh Pant",
+      coach: "Justin Langer",
+      trophyWins: 0,
+      winningYears: [],
+      homeGround: "BRSABV Ekana Stadium, Lucknow",
+      city: "Lucknow",
+      state: "Uttar Pradesh",
+      founded: 2022,
+      primaryColor: "#00AEEF",
+      secondaryColor: "#FF6F00",
+      mascot: "Super Giant",
+      owner: "RPSG Group",
+    },
+    {
+      id: 10,
+      name: "Gujarat Titans",
+      shortName: "GT",
+      poster: "https://www.iplt20.com/assets/images/teams/GT.png",
+      captain: "Shubman Gill",
+      coach: "Ashish Nehra",
+      trophyWins: 1,
+      winningYears: [2022],
+      homeGround: "Narendra Modi Stadium, Ahmedabad",
+      city: "Ahmedabad",
+      state: "Gujarat",
+      founded: 2022,
+      primaryColor: "#1C2C5B",
+      secondaryColor: "#D4AF37",
+      mascot: "Titan",
+      owner: "CVC Capital Partners",
+    },
+  ];
+
+  // teamId --> array -->id -->obeject -{}
+
+  
+  const foundTeam = teamList.find((team)=>team.id == teamId)
+  //{object}
+  console.log("found team =",foundTeam)
+
   return (
-    <div style={{textAlign:"center"}}>
-        <h1>TEAM DETAIL - {teamId}</h1>
+    <div style={{ textAlign: "center",color:foundTeam.primaryColor }}>
+      <h1>TEAM DETAIL - {teamId}</h1>
+      <h1>TEAM NAME = {foundTeam.name}</h1>
+      <h3>Short Name = {foundTeam.shortName}</h3>
+      <h3>Captain = {foundTeam.captain}</h3>
+      <h4>Trophies = {foundTeam.trophyWins}</h4>
+      
     </div>
-  )
-}
+  );
+};

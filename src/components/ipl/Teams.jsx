@@ -65,6 +65,7 @@ export const Teams = () => {
       poster: "https://www.iplt20.com/assets/images/teams/GT.png",
     },
   ];
+  
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Teams</h1>
