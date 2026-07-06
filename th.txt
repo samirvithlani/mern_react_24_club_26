@@ -125,3 +125,30 @@ navbar -->li team
 TeamDetail component -->
  app.js -->teamdetail routes ->add -->
  teamdetail to fetch id useParams() 
+
+ C: Players:
+ C: Player States:
+
+ app.js ->routes --> players ,players states
+
+ get array of players having
+ players
+ {
+ id
+ name
+ sport
+ }
+ 10 playeers
+
+ table 
+ id name sports detail
+ {
+ id
+ name
+ sport,
+ runs,
+ wickets
+ }
+ PLayerStates 
+
+
