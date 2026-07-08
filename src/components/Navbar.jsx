@@ -42,6 +42,11 @@ export const Navbar = () => {
                 funccalling
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/usestatedemo1">
+                use state demo1
+              </Link>
+            </li>
             
             
           </ul>

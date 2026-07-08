@@ -18,6 +18,7 @@ import { Watch } from './components/hotstar/Watch'
 import { Teams } from './components/ipl/Teams'
 import { TeamDetail } from './components/ipl/TeamDetail'
 import { FuncCalling } from './components/FuncCalling'
+import { UseStateDemo1 } from './components/UseStateDemo1'
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path='/teams' element = {<Teams/>}></Route>
             <Route path='/funccalling' element = {<FuncCalling/>}></Route>
             <Route path='/teamdetail/:id' element ={<TeamDetail/>}></Route>
+            <Route path='/usestatedemo1' element ={<UseStateDemo1/>}></Route>
           </Routes>
     </div>
   )

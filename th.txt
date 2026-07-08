@@ -152,3 +152,18 @@ TeamDetail component -->
  PLayerStates 
 
 
+react hook:
+hooks: 
+use start
+
+useState
+useParam
+useMemo
+useEffect
+
+
+virtual dom:
+dom -->html
+dom -->excet copy:
+
+DOCUENT:waht is virtual dom
