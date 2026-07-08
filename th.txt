@@ -138,7 +138,7 @@ TeamDetail component -->
  name
  sport
  }
- 10 playeers
+ 10 playesers
 
  table 
  id name sports detail

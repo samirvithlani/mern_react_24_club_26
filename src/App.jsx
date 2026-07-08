@@ -17,6 +17,7 @@ import { Error404 } from './components/Error404'
 import { Watch } from './components/hotstar/Watch'
 import { Teams } from './components/ipl/Teams'
 import { TeamDetail } from './components/ipl/TeamDetail'
+import { FuncCalling } from './components/FuncCalling'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path='/*' element ={<Error404/>}></Route>
             <Route path='/watch/:name' element = {<Watch/>}></Route>
             <Route path='/teams' element = {<Teams/>}></Route>
+            <Route path='/funccalling' element = {<FuncCalling/>}></Route>
             <Route path='/teamdetail/:id' element ={<TeamDetail/>}></Route>
           </Routes>
     </div>
