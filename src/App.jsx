@@ -19,6 +19,8 @@ import { Teams } from './components/ipl/Teams'
 import { TeamDetail } from './components/ipl/TeamDetail'
 import { FuncCalling } from './components/FuncCalling'
 import { UseStateDemo1 } from './components/UseStateDemo1'
+import { UseStateDemo2 } from './components/UseStateDemo2'
+import { InputDemo1 } from './components/input/InputDemo1'
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
             <Route path='/funccalling' element = {<FuncCalling/>}></Route>
             <Route path='/teamdetail/:id' element ={<TeamDetail/>}></Route>
             <Route path='/usestatedemo1' element ={<UseStateDemo1/>}></Route>
+            <Route path='/usestateDemo2' element = {<UseStateDemo2/>}></Route>
+            <Route path='/InputDemo1' element = {<InputDemo1/>}></Route>
           </Routes>
     </div>
   )

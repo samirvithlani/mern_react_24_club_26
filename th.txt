@@ -167,3 +167,23 @@ dom -->html
 dom -->excet copy:
 
 DOCUENT:waht is virtual dom
+
+
+Component:
+Loading -->state -->true
+
+<h1>
+loaidng...
+
+stop loader--> click --.function --> loaidng -->false ---> h1 -->loading 
+
+demo3
+
+useState ([10,20,30])
+
+map --> iterate-->
+
+push ---> click -->random -->array push
+
+
+
