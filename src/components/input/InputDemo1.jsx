@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 export const InputDemo1 = () => {
     const[name,setName]=useState()
     const[age,setAge]=useState()
+    const [color, setcolor] = useState("black")
     const [clicked, setclicked] = useState(false)
     //name -->cahnges ---> setName
     const nameHandler = (event)=>{
@@ -32,16 +33,21 @@ export const InputDemo1 = () => {
             {/* {age} */}
         </div>
         <div>
+            <input type='color' onChange={(event)=>{setcolor(event.target.value)}}></input>
+            
+        </div>
+        <div>
             <button onClick={clickHandler}>CLICK</button>
         </div>
 
 {
     clicked == true && 
 
-        <div>
+        <div style={{color:color}}>
             <h1>OUTPUT</h1>
             <h2>NAme = {name}</h2>
             <h3>Age = {age}</h3>
+            <h4>Color = {color}</h4>
         </div>
 }
 
