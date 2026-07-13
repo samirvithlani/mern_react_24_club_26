@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 export const InputDemo1 = () => {
     const[name,setName]=useState()
     const[age,setAge]=useState()
+    const [clicked, setclicked] = useState(false)
     //name -->cahnges ---> setName
     const nameHandler = (event)=>{
 
@@ -13,19 +14,37 @@ export const InputDemo1 = () => {
         console.log(event.target.value)
         setAge(event.target.value)
     }
+    const clickHandler = ()=>{
+        setclicked(true)
+    }
+
   return (
     <div style={{textAlign:"center"}}>
         <h1>InputDemo1</h1>
         <div>
             <label>NAME</label>
             <input type='text' onChange={(event)=>{nameHandler(event)}}></input>
-            {name}
+            {/* {name} */}
         </div>
         <div>
             <label>AGE</label>
             <input type='text' onChange={(event)=>{ageHandler(event)}} ></input>
-            {age}
+            {/* {age} */}
         </div>
+        <div>
+            <button onClick={clickHandler}>CLICK</button>
+        </div>
+
+{
+    clicked == true && 
+
+        <div>
+            <h1>OUTPUT</h1>
+            <h2>NAme = {name}</h2>
+            <h3>Age = {age}</h3>
+        </div>
+}
+
     </div>
   )
 }
