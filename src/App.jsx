@@ -22,6 +22,8 @@ import { UseStateDemo1 } from './components/UseStateDemo1'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { InputDemo1 } from './components/input/InputDemo1'
 import { InputDemo2 } from './components/input/InputDemo2'
+import { INputDemo3 } from './components/input/INputDemo3'
+import { InputDemo4 } from './components/input/InputDemo4'
 
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
             <Route path='/usestateDemo2' element = {<UseStateDemo2/>}></Route>
             <Route path='/InputDemo1' element = {<InputDemo1/>}></Route>
             <Route path='/inputdemo2' element ={<InputDemo2/>}></Route>
+            <Route path='/inputdemo3' element ={<INputDemo3/>}></Route>
+            <Route path='/inputdemo4' element ={<InputDemo4/>}></Route>
           </Routes>
     </div>
   )
