@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
 export const FormDemo1 = () => {
     const {register,handleSubmit} =useForm()
+    const [output, setoutput] = useState({})
+    const [isSubbmited, setisSubbmited] = useState(false)
     //register -->object : input register..
     //handleSubmit function : submit event handle..
     const submitHandler = (data)=>{
         console.log("data..",data)
+        setoutput(data)
+        setisSubbmited(true)
     }
   return (
     <div style={{textAlign:"center"}}>
@@ -14,7 +18,7 @@ export const FormDemo1 = () => {
         <form onSubmit={handleSubmit(submitHandler)}>
             <div>
                 <label>NAME</label>
-                <input type='text' {...register("fname")}></input>
+                <input type='text' {...register("name")}></input>
             </div>
             <div>
                 <label>GENDER</label>
@@ -32,6 +36,19 @@ export const FormDemo1 = () => {
                 <input type='submit'></input>
             </div>
         </form>
+        {
+            isSubbmited == true && 
+            <div>
+            <h1>OUTPUT</h1>
+            <h1>Name = {output.name}</h1>
+            <h2>Gender  = {output.gender}</h2>
+            {
+                output.skills.map((s)=>{
+                    return <li>{s}</li>
+                })
+            }
+        </div>
+}
     </div>
   )
 }
