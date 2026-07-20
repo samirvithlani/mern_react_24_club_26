@@ -184,6 +184,11 @@ useState ([10,20,30])
 map --> iterate-->
 
 push ---> click -->random -->array push
+<-------------------------------------->
+npm i  react-hook-form
+
+
+
 
 
 
