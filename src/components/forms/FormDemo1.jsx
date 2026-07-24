@@ -33,6 +33,15 @@ export const FormDemo1 = () => {
                 JAVA:<input type='checkbox' {...register("skills")} value="java"></input>
             </div>
             <div>
+                <label>COUNTRY</label>
+                <select {...register("country")}>
+                    <option value="india">INDIA</option>
+                    <option value="usa">USA</option>
+                    <option value="china">CHINA</option>
+
+                </select>
+            </div>
+            <div>
                 <input type='submit'></input>
             </div>
         </form>
@@ -42,6 +51,7 @@ export const FormDemo1 = () => {
             <h1>OUTPUT</h1>
             <h1>Name = {output.name}</h1>
             <h2>Gender  = {output.gender}</h2>
+            <h3>Country = {output.country}</h3>
             {
                 output.skills.map((s)=>{
                     return <li>{s}</li>

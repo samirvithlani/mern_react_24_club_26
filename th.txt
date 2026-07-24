@@ -190,5 +190,15 @@ npm i  react-hook-form
 
 
 
+required
+min
+max
+minLength
+maxLength
+pattern
+validate
+
+
+
 
 
