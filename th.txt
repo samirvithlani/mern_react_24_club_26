@@ -199,6 +199,17 @@ pattern
 validate
 
 
+take skills as checkbox
+take 4 skills
+skill selection is required*
+min 2 skills are reauired
+
+if you use checkbox inside validate params will br array
+
+
+
+
+
 
 
 
