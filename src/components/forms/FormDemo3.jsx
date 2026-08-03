@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 export const FormDemo3 = () => {
 
     const refCodeList = ["fb","google","insta"]
-    const {register,handleSubmit,formState:{errors}}=useForm()
+    const {register,handleSubmit,formState:{errors}}=useForm({mode:"all"})
     console.log(errors) //{}
     const submitHandler = (data)=>{
         console.log(data)

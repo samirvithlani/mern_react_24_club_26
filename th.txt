@@ -207,6 +207,13 @@ min 2 skills are reauired
 if you use checkbox inside validate params will br array
 
 
+create form for medical 
+take name    : text required*
+age          : no neg and required
+gender:radiio button: : required
+any disease: checkbox : required
+prevsios consult date: input type date and required*
+
 
 
 
