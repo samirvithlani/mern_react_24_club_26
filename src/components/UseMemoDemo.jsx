@@ -4,6 +4,7 @@ export const UseMemoDemo = () => {
     const gridsize = 5;
     const totlalTiles = gridsize * gridsize;
     const [clickedTiles, setclickedTiles] = useState([])
+    const [isGameover, setisGameover] = useState(false)
 
     const bombPos = useMemo(()=>{
         return Math.floor(Math.random()*totlalTiles)
@@ -12,7 +13,8 @@ export const UseMemoDemo = () => {
         //add clicked index in array
         setclickedTiles([...clickedTiles,index])
         if(bombPos == index){
-            alert("boooom.....")
+            //alert("boooom.....")
+            setisGameover(true)
         }
 
     }
@@ -49,7 +51,7 @@ export const UseMemoDemo = () => {
                         backgroundColor:clickedTiles.includes(index)?"gray":"white",
                         cursor:"pointer"
                     }}>
-                        {index}
+                        {isGameover && index==bombPos ?"💣":index}
                     </div>
                 })
             }
