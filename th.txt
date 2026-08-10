@@ -216,6 +216,103 @@ prevsios consult date: input type date and required*
 
 
 
+API: application prog interface:
+react js : frontend fw: no db access:
+no dyanmic
+
+API:
+
+fe: react
+be:java,python,...
+
+react -->python,java
+
+fe <<-->>be
+
+<---common --->
+url: data ...
+
+2 type user
+provider consumer
+
+backend dev   : frontend devloper
+
+url --->data
+
+zomato --> google map ---> code???  --->api --> integrate --->use
+
+
+deep --> url --> operation
+4 op
+fetch displacy reetrive
+create
+update
+delete
+
+
+request method:
+url --> request method
+GET,POST,PUT,DELETE
+
+db -->fetch ->frontend dev -->GET
+frontend -->form ---> db --->
+
+delete --->
+update --->Put
+
+api -->url -->request method
+
+documneation:
+
+url ---> data  ?? displacy 
+
+data type -- ?
+json 
+
+only get api can directly call from browser url
+
+API call -->
+pckage 
+js native --> fetch
+3rd party package
+axios
+
+npm i axios
+
+
+api ->server ?? 
+immdiate resposne?
+
+js ---> non sync:
+
+api -->call time??
+it will not wait
+promise
+async await
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
