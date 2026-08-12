@@ -291,6 +291,9 @@ promise
 async await
 
 
+useEffect:
+to handle side effect in react js we use useeffect hook
+component load.... 
 
 
 
