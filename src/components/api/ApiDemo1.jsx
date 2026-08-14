@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Loader } from '../Loader'
+import { toast } from 'react-toastify'
 
 export const ApiDemo1 = () => {
 
@@ -31,6 +32,19 @@ export const ApiDemo1 = () => {
         setloading(false)   
     }
 
+    const deleteHandler = async(id)=>{
+
+        //alert(id)
+        //delete api
+        const res = await axios.delete(`https://node5.onrender.com/user/user/${id}`);
+        console.log(res) //axios obejct..
+        if(res.status==204){
+            //alert("user deleted !!!")
+            toast.success("user deleted !!")
+            getApiCall() //updated record..
+        }
+    }
+
 
   return (
     <div style={{textAlign:"center"}}>
@@ -47,6 +61,7 @@ export const ApiDemo1 = () => {
                     <th>EMAIL</th>
                     <th>AGE</th>
                     <th>STATUS</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -59,6 +74,9 @@ export const ApiDemo1 = () => {
                             <td>{u.email}</td>
                             <td>{u.age}</td>
                             <td>{u.isActive==true?"Active":"NOT ACTIVE"}</td>
+                            <td>
+                                <button onClick={()=>{deleteHandler(u._id)}} className='btn btn-danger'>DELETE</button>
+                            </td>
                         </tr>
                     })
                 }
