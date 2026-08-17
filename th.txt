@@ -296,7 +296,25 @@ to handle side effect in react js we use useeffect hook
 component load.... 
 
 
+POST:
+frontend -->bacnekd -->data
 
+url ---  ?
+data --?
+data type
+params
+
+POST: https://node5.onrender.com/user/user/
+data :
+{
+	name:"",
+	email:"",
+	age:12,
+	isActive:true,
+	password:""
+}
+
+email unique
 
 
 

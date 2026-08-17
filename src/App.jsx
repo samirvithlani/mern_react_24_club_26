@@ -31,6 +31,8 @@ import { FormDemo4 } from "./components/forms/FormDemo4";
 import { UseMemoDemo } from "./components/UseMemoDemo";
 import { ApiDemo1 } from "./components/api/ApiDemo1";
 import { Bounce, ToastContainer } from "react-toastify";
+import { ApiDemo2 } from "./components/api/ApiDemo2";
+import { ApiDemo3 } from "./components/api/ApiDemo3";
 
 function App() {
   return (
@@ -71,6 +73,8 @@ function App() {
         <Route path="/formdemo4" element={<FormDemo4 />}></Route>
         <Route path="/usememodemo" element={<UseMemoDemo />}></Route>
         <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
+        <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
+        <Route path="/apidemo3" element={<ApiDemo3 />}></Route>
       </Routes>
     </div>
   );
