@@ -316,6 +316,27 @@ data :
 
 email unique
 
+GET:https://node5.onrender.com/product/getall <<<--browser
+
+POST: http://node5.onrender.com/product/create
+
+D-
+ {
+	 "name": "Shirt",
+      "price": 999,
+      "description": "For Office",
+      "colors": [
+        "Red",
+        "Black"
+      ],
+      "size": "xl",
+      "isAvailable": true,
+      "unit": 20,
+      
+},
+
+size : l,xl,m
+
 
 
 
