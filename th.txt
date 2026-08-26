@@ -339,6 +339,27 @@ size : l,xl,m
 
 
 
+public api:
+private api:
+
+headers data
+
+
+https://node5.onrender.com/user/login :POST
+
+
+
+
+Login Component:
+Form : react-hook-form
+email
+password
+
+submit --> submitHandler -->
+
+https://node5.onrender.com/user/login:
+res.data.data --> token
+console.log(res.data.data)
 
 
 

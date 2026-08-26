@@ -9,10 +9,10 @@ export const ApiDemo2 = () => {
 
     const addUser = async()=>{
         const userObj = {
-            name:"ram",
-            email:"ram3@gmail.com",
+            name:"test",
+            email:"test@gmail.com",
             age:23,
-            password:"ram123",
+            password:"test123",
             isActive:true
         }
         const res = await axios.post("https://node5.onrender.com/user/user/",userObj)
