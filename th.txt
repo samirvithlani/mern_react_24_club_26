@@ -361,6 +361,27 @@ https://node5.onrender.com/user/login:
 res.data.data --> token
 console.log(res.data.data)
 
+GET : https://node5.onrender.com/item
+
+Item Component:
+
+function : getItems:
+GET API CALL
+
+const res = await axios.get("https://node5.onrender.com/item",{
+  headers:{
+    "Authorization":`Bearer $localstorage.getItem("token")`
+  }
+})
+clg(res.data)
+
+
+useEffect(()=>{
+
+  getItems()
+
+},[])
+
 
 
 
