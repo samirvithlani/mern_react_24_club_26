@@ -34,6 +34,8 @@ import { Bounce, ToastContainer } from "react-toastify";
 import { ApiDemo2 } from "./components/api/ApiDemo2";
 import { ApiDemo3 } from "./components/api/ApiDemo3";
 import { UpdateUser } from "./components/api/UpdateUser";
+import { UseRefDemo1 } from "./components/UseRefDemo1";
+import { UseRefDemo2 } from "./components/UseRefDemo2";
 
 function App() {
   return (
@@ -77,6 +79,7 @@ function App() {
         <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
         <Route path="/apidemo3" element={<ApiDemo3 />}></Route>
         <Route path="/updateuser/:id" element= {<UpdateUser/>}></Route>
+        <Route path="/userefdemo" element ={<UseRefDemo2/>}></Route>
       </Routes>
     </div>
   );
