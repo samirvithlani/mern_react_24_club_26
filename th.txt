@@ -386,6 +386,20 @@ useEffect(()=>{
 dom property page rerender access 
 useRef
 
+------------------------------->>>
+
+communication bw components:
+props
+
+context
+redux
+
+
+
+props: property:
+parent component --> child component
+
+
 
 
 

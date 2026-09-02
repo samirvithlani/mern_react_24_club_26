@@ -36,6 +36,7 @@ import { ApiDemo3 } from "./components/api/ApiDemo3";
 import { UpdateUser } from "./components/api/UpdateUser";
 import { UseRefDemo1 } from "./components/UseRefDemo1";
 import { UseRefDemo2 } from "./components/UseRefDemo2";
+import { Books } from "./components/Books";
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
         <Route path="/apidemo3" element={<ApiDemo3 />}></Route>
         <Route path="/updateuser/:id" element= {<UpdateUser/>}></Route>
         <Route path="/userefdemo" element ={<UseRefDemo2/>}></Route>
+        <Route path="/books" element = {<Books/>}></Route>
       </Routes>
     </div>
   );

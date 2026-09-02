@@ -124,6 +124,11 @@ export const Navbar = () => {
                 use ref demo
               </Link>
             </li>
+                        <li class="nav-item">
+              <Link class="nav-link" to="/books">
+                books
+              </Link>
+            </li>
             
             
             
