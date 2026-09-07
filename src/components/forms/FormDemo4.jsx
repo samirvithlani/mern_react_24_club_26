@@ -1,7 +1,14 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { MyButton } from '../MyButton'
+import { MyCard } from '../MyCard'
 
 export const FormDemo4 = () => {
+
+    const testForm =()=>{
+        alert("testt form called..")
+    }
+
     const [step, setstep] = useState(1)
     const{register,handleSubmit,formState:{errors},trigger}=useForm()
     const submitHandler =(data)=>{
@@ -36,6 +43,7 @@ export const FormDemo4 = () => {
     }
   return (
     <div style={{textAlign:"center"}}>
+        <MyButton funName ={testForm}></MyButton>
             <form onSubmit={handleSubmit(submitHandler)}>
                 {
                     step==1 && 
@@ -73,6 +81,8 @@ export const FormDemo4 = () => {
                     </div>
                 }
             </form>
+
+            <MyCard title="product" height="250px" bgcolor ="red"></MyCard>
     </div>
   )
 }

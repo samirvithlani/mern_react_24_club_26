@@ -1,4 +1,6 @@
 import React, { useMemo, useState } from 'react'
+import { MyButton } from './MyButton';
+import { MyCard } from './MyCard';
 
 export const UseMemoDemo = () => {
     const gridsize = 5;
@@ -23,10 +25,13 @@ export const UseMemoDemo = () => {
     //const bombPos = Math.floor(Math.random()*totlalTiles)
     //useMemo
 
-    
+    const memoTest =()=>{
+        alert("memo test called.. !!")
+    }
 
   return (
     <div style={{textAlign:"center"}}>
+        <MyButton funName ={memoTest} class="btn btn-warning" title="DEMO"></MyButton>
         <h1>USE MEMO DEMO</h1>
         {bombPos}
         <div style={{
@@ -57,6 +62,7 @@ export const UseMemoDemo = () => {
             }
 
         </div>
+        <MyCard></MyCard>
     </div>
   )
 }
