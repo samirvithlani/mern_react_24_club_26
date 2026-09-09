@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BookList } from './BookList'
 import { MyButton } from './MyButton'
+import { MyTable } from './MyTable'
 
 export const Books = () => {
   var name = "java"
@@ -9,6 +10,8 @@ export const Books = () => {
     alert("test book"+x)
   }
   const [count, setcount] = useState(0)
+
+  const headers = ["id","bookname","bookprice","bookcover"]
   
   return (
     <div style={{textAlign:"center"}}>
@@ -16,6 +19,7 @@ export const Books = () => {
         <h1>Count p = {count}</h1>
         <BookList name = {name} data = {bookData} testBook = {testBook} count ={count} setcount ={setcount}></BookList>
         <MyButton title ="bookdata" class="btn btn-danger" funName={()=>{testBook(199)}}></MyButton>
+        <MyTable headers = {headers}></MyTable>
     </div>
   )
 }
