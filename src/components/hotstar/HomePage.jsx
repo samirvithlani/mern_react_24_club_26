@@ -26,7 +26,7 @@ const headers = Object.keys(users[0])
             </tr>
           </thead>
         </table> */}
-        <MyTable headers = {headers}></MyTable>
+        <MyTable headers = {headers} data = {users}></MyTable>
     </div>
   )
 }
