@@ -129,6 +129,11 @@ export const Navbar = () => {
                 books
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/uni">
+                uni
+              </Link>
+            </li>
             
             
             

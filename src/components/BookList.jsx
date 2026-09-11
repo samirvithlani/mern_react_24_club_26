@@ -1,4 +1,5 @@
 import React from 'react'
+import { SubBookList } from './SubBookList'
 
 //props -->is not keyword
 export const BookList = (props) => {
@@ -15,6 +16,9 @@ export const BookList = (props) => {
       {/* <button onClick={props.testBook}>TEST BOOK</button> */}
       <button onClick={()=>{props.testBook(100)}}>TEST BOOK</button>
       <button onClick={()=>{props.setcount(props.count+1)}}>increse</button>
+
+
+      <SubBookList name = {props.name}></SubBookList>
     </div>
   )
 }

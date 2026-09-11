@@ -24,8 +24,8 @@ export const Books = () => {
         <h1>BOOKS</h1>
         <h1>Count p = {count}</h1>
         <BookList name = {name} data = {bookData} testBook = {testBook} count ={count} setcount ={setcount}></BookList>
-        <MyButton title ="bookdata" class="btn btn-danger" funName={()=>{testBook(199)}}></MyButton>
-        <MyTable headers = {headers} data = {books}></MyTable>
+        {/* <MyButton title ="bookdata" class="btn btn-danger" funName={()=>{testBook(199)}}></MyButton>
+        <MyTable class="table table-dark" headers = {headers} data = {books}></MyTable> */}
     </div>
   )
 }

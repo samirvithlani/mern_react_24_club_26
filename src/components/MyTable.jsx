@@ -5,7 +5,7 @@ export const MyTable = (props) => {
   //["id","name","age","email"],
   console.log("mytable props",props)
   return (
-    <table className='table'>
+    <table className={props.class || "table"}>
         <thead>
           <tr>
               {

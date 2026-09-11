@@ -400,7 +400,24 @@ props: property:
 parent component --> child component
 
 
+parent --> 
+books --> booklist --> subbooklist
 
+
+
+inheritance:
+
+parent ->child --->
+
+parent -->child  ****** no to sub child...
+
+props drlling...
+
+
+
+contentx:
+
+1 comp ---> global object --> child compone...
 
 
 
