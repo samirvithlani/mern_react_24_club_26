@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "./ThemeContext";
 
 export const Navbar = () => {
+  const {theme,settheme} = useContext(ThemeContext)
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <Link class="navbar-brand" to="/">
           Navbar
         </Link>
+        <button onClick={()=>{settheme(theme=="light"?"dark":"light")}} class="navbar-brand" to="/">
+          {theme == "light"?"dark":"light"}
+        </button>
         <button
           class="navbar-toggler"
           type="button"

@@ -38,10 +38,16 @@ import { UseRefDemo1 } from "./components/UseRefDemo1";
 import { UseRefDemo2 } from "./components/UseRefDemo2";
 import { Books } from "./components/Books";
 import { Uni } from "./components/Uni";
+import { ThemeContext } from "./components/ThemeContext";
 
 function App() {
+
+  const [theme, settheme] = useState("light")
+
   return (
-    <div>
+    <ThemeContext.Provider value={{theme,settheme}}>
+
+    <div style={{backgroundColor:theme=="light"?"white":"black",color:theme=="light"?"black":"white"}}>
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -86,6 +92,7 @@ function App() {
         <Route path="/uni" element ={<Uni/>}></Route>
       </Routes>
     </div>
+    </ThemeContext.Provider>
   );
 }
 
